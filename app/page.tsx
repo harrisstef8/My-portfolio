@@ -534,6 +534,7 @@ export default function Page() {
 
   const [active, setActive] = useState<TabKey>("about");
 
+  
   const currentTitle =
     active === "about"
       ? "About Me"
