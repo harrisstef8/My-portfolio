@@ -837,16 +837,16 @@ export default function Page() {
                       {/* Κουμπί Full CV κάτω δεξιά */}
                       <div className="flex justify-end">
                         <a
-                          href="/CV.pdf"          // αν αλλάξεις όνομα στο αρχείο, άλλαξέ το κι εδώ
+                          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/CV.pdf`}
                           target="_blank"
                           rel="noreferrer"
                           className="inline-flex items-center gap-2
-                   rounded-2xl bg-gradient-to-br from-yellow-500 to-yellow-600
-                   px-5 py-2.5 text-sm font-semibold text-black
-                   shadow-[0_14px_35px_rgba(234,179,8,0.35)]
-                   transition hover:from-yellow-400 hover:to-yellow-500
-                   focus:outline-none focus:ring-2 focus:ring-yellow-500/70
-                   focus:ring-offset-2 focus:ring-offset-[#090b10]"
+                            rounded-2xl bg-gradient-to-br from-yellow-500 to-yellow-600
+                            px-5 py-2.5 text-sm font-semibold text-black
+                            shadow-[0_14px_35px_rgba(234,179,8,0.35)]
+                            transition hover:from-yellow-400 hover:to-yellow-500
+                            focus:outline-none focus:ring-2 focus:ring-yellow-500/70
+                            focus:ring-offset-2 focus:ring-offset-[#090b10]"
                         >
                           <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl bg-black/10">
                             <svg
