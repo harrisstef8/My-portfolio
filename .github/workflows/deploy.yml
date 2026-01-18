@@ -16,6 +16,13 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    # 👇 ΠΕΡΝΑΜΕ ΤΑ EMAILJS ENV ΑΠΟ ΤΑ REPO VARIABLES
+    env:
+      NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ vars.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
+      NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ vars.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
+      NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ vars.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
