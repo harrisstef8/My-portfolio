@@ -1,5 +1,5 @@
 export const DATA = {
-  name: "Stef",
+  name: "harrisstef",
   title: "Computer Scientist",
   location: "Thessaloniki, GR",
   bio: "Hello, I'm Harris, just an IT guy.",
